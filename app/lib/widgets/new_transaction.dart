@@ -17,7 +17,7 @@ class NewTransaction extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
             TextField(
-              decoration: InputDecoration(labelText: 'Title'),
+              decoration: InputDecoration(labelText: 'Title'), //textField label
               controller: titleController,
               // onChanged: (val) {
               //   titleInput = val;
@@ -25,7 +25,8 @@ class NewTransaction extends StatelessWidget {
             ),
             TextField(
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(labelText: 'Amount'),
+              decoration:
+                  InputDecoration(labelText: 'Amount'), //textField label
               controller: amountController,
               // onChanged: (val) => amountInput = val,
             ),
