@@ -41,10 +41,14 @@ class NewTransaction extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    addTx(
-                      titleController.text,
-                      double.parse(amountController.text),
-                    );
+                    if (titleController.text.isEmpty ||
+                        double.parse(amountController.text) < 0) {
+                    } else {
+                      addTx(
+                        titleController.text,
+                        double.parse(amountController.text),
+                      );
+                    }
                   },
                 ),
               ),
